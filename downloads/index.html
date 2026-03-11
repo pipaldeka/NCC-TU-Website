@@ -1,373 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Downloads — NCC Tezpur University</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/downloads.css" />
-  </head>
-  <body>
 
-    <!-- ── HEADER ── -->
-    <header id="site-header">
-      <a href="../index.html">
-        <div class="logo">
-          <img src="../res/logo.png" alt="NCC Logo" />
-          <div class="logo-text-container">
-            <h2>NCC</h2>
-            <h3>Tezpur University</h3>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downloads — NCC Tezpur University</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/downloads.css" />
+</head>
+
+<body>
+
+  <!-- ── HEADER ── -->
+  <header id="site-header">
+    <a href="../index.html"">
+      <div class="logo">
+        <img src="./res/logo.png" alt="NCC Logo" />
+        <div class="logo-text-container">
+          <h2>NCC</h2>
+          <h3>Tezpur University</h3>
         </div>
-      </a>
-      <nav>
-        <ul id="nav-menu">
-          <li><a href="../people/index.html">People</a></li>
-          <li><a href="../index.html#about">About</a></li>
-          <li><a href="../gallery/index.html">Gallery</a></li>
-          <li><a href="../index.html#faq-section">FAQ</a></li>
-          <li><a href="../downloads/index.html" class="nav-active">Downloads</a></li>
-          <li><a href="../contact/index.html">Contact Us</a></li>
-        </ul>
-        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-      </nav>
-    </header>
+      </div>
+    </a>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="../people/index.html">People</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#gallery">Gallery</a></li>
+        <li><a href="../index.html#faq-section">FAQ</a></li>
+        <li><a href="./index.html">Downloads</a></li>
+        <li><a href="../achievers/index.html">Achievers</a></li>
+        <li><a href="../contact/index.html">Contact Us</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
 
-    <!-- ── PAGE HERO ── -->
-    <div class="page-hero">
-      <div class="page-hero-content">
-        <span class="section-tag">Resource Library</span>
-        <h1>Downloads</h1>
-        <p>Access official notices, annual reports, and event documentation</p>
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-tag">Resource Library</span>
+      <h1>Downloads</h1>
+      <p>Access official notices, annual reports, and event documentation</p>
+    </div>
+  </div>
+
+  <!-- ── FILTER TABS ── -->
+  <div class="downloads-filters">
+    <div class="filter-inner">
+      <button class="filter-btn active" data-filter="all">All Resources</button>
+      <button class="filter-btn" data-filter="notices">Notices</button>
+      <button class="filter-btn" data-filter="annual">Annual Reports</button>
+      <button class="filter-btn" data-filter="events">Event Reports</button>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main class="downloads-main">
+
+    <!-- NOTICES -->
+    <section class="dl-section" id="notices-section" data-category="notices">
+      <div class="dl-section-header">
+        <div class="dl-section-icon notices-icon">📋</div>
+        <div>
+          <span class="section-tag">Official Communications</span>
+          <h2>Notices &amp; Circulars</h2>
+        </div>
+      </div>
+
+      <div class="dl-grid">
+        <div class="dl-card" data-category="notices">
+          <div class="dl-card-badge new">New</div>
+          <div class="dl-card-icon">📄</div>
+          <div class="dl-card-body">
+            <h4>Enrollment Form 2025–26</h4>
+            <p>Application form for new cadets joining NCC in the academic year 2025–26.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 March 2025</span>
+              <span class="dl-size">PDF · 240 KB</span>
+            </div>
+          </div>
+          <a href="../library/notices/enrollment-form-2025-26.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card" data-category="notices">
+          <div class="dl-card-icon">📄</div>
+          <div class="dl-card-body">
+            <h4>Cadet Handbook</h4>
+            <p>Complete handbook for NCC cadets covering rules, regulations, and code of conduct.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 January 2025</span>
+              <span class="dl-size">PDF · 1.2 MB</span>
+            </div>
+          </div>
+          <a href="../library/notices/cadet-handbook.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card" data-category="notices">
+          <div class="dl-card-icon">📄</div>
+          <div class="dl-card-body">
+            <h4>Training Schedule 2025</h4>
+            <p>Detailed training timetable for all cadets including theory and practical sessions.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 February 2025</span>
+              <span class="dl-size">PDF · 320 KB</span>
+            </div>
+          </div>
+          <a href="../library/notices/training-schedule-2025.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card" data-category="notices">
+          <div class="dl-card-icon">📄</div>
+          <div class="dl-card-body">
+            <h4>Camp Selection Notice</h4>
+            <p>Guidelines and selection criteria for cadets participating in NCC camps.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 November 2024</span>
+              <span class="dl-size">PDF · 180 KB</span>
+            </div>
+          </div>
+          <a href="../library/notices/camp-selection-notice.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANNUAL REPORTS -->
+    <section class="dl-section" id="annual-section" data-category="annual">
+      <div class="dl-section-header">
+        <div class="dl-section-icon annual-icon">📊</div>
+        <div>
+          <span class="section-tag">Year in Review</span>
+          <h2>Annual Reports</h2>
+        </div>
+      </div>
+
+      <div class="dl-grid annual-grid">
+        <div class="dl-card annual-card" data-category="annual">
+          <div class="annual-year">2024–25</div>
+          <div class="dl-card-body">
+            <h4>Annual Activity Report</h4>
+            <p>Comprehensive overview of all NCC activities, achievements, and cadet performance during the academic
+              year.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 April 2025</span>
+              <span class="dl-size">PDF · 4.8 MB</span>
+            </div>
+          </div>
+          <a href="../library/annual-reports/annual-report-2024-25.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card annual-card" data-category="annual">
+          <div class="annual-year">2023–24</div>
+          <div class="dl-card-body">
+            <h4>Annual Activity Report</h4>
+            <p>Complete record of NCC activities, camp participation, social service initiatives, and cadet
+              accomplishments.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 April 2024</span>
+              <span class="dl-size">PDF · 4.2 MB</span>
+            </div>
+          </div>
+          <a href="../library/annual-reports/annual-report-2023-24.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card annual-card" data-category="annual">
+          <div class="annual-year">2022–23</div>
+          <div class="dl-card-body">
+            <h4>Annual Activity Report</h4>
+            <p>Documentation of unit activities including training outcomes, awards received, and NIC participation.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 May 2023</span>
+              <span class="dl-size">PDF · 3.6 MB</span>
+            </div>
+          </div>
+          <a href="../library/annual-reports/annual-report-2022-23.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card annual-card" data-category="annual">
+          <div class="annual-year">2021–22</div>
+          <div class="dl-card-body">
+            <h4>Annual Activity Report</h4>
+            <p>Year-end report covering all activities, camps attended, and notable achievements of cadets.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 April 2022</span>
+              <span class="dl-size">PDF · 3.1 MB</span>
+            </div>
+          </div>
+          <a href="../library/annual-reports/annual-report-2021-22.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENT REPORTS -->
+    <section class="dl-section" id="events-section" data-category="events">
+      <div class="dl-section-header">
+        <div class="dl-section-icon events-icon">🎖️</div>
+        <div>
+          <span class="section-tag">Activities &amp; Camps</span>
+          <h2>Event Reports</h2>
+        </div>
+      </div>
+
+      <div class="dl-grid">
+        <div class="dl-card" data-category="events">
+          <div class="dl-card-badge event-badge">Camp</div>
+          <div class="dl-card-icon">📝</div>
+          <div class="dl-card-body">
+            <h4>CATC Camp Report — 2025</h4>
+            <p>Combined Annual Training Camp report including attendance, training modules, and performance evaluation.
+            </p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 January 2025</span>
+              <span class="dl-size">PDF · 1.8 MB</span>
+            </div>
+          </div>
+          <a href="../library/event-reports/catc-camp-report-2025.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card" data-category="events">
+          <div class="dl-card-badge social-badge">Social</div>
+          <div class="dl-card-icon">📝</div>
+          <div class="dl-card-body">
+            <h4>Republic Day Parade Report 2025</h4>
+            <p>Report from NCC cadets' participation in Republic Day Parade preparations and events.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 February 2025</span>
+              <span class="dl-size">PDF · 950 KB</span>
+            </div>
+          </div>
+          <a href="../library/event-reports/republic-day-parade-2025.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card" data-category="events">
+          <div class="dl-card-badge event-badge">NIC</div>
+          <div class="dl-card-icon">📝</div>
+          <div class="dl-card-body">
+            <h4>National Integration Camp — 2014</h4>
+            <p>Report from the National Integration Camp hosted at Tezpur University in 2014.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 December 2014</span>
+              <span class="dl-size">PDF · 2.3 MB</span>
+            </div>
+          </div>
+          <a href="../library/event-reports/national-integration-camp-2014.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card" data-category="events">
+          <div class="dl-card-badge event-badge">NIC</div>
+          <div class="dl-card-icon">📝</div>
+          <div class="dl-card-body">
+            <h4>National Integration Camp — 2013</h4>
+            <p>Report from the first National Integration Camp hosted at Tezpur University in 2013.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 December 2013</span>
+              <span class="dl-size">PDF · 2.1 MB</span>
+            </div>
+          </div>
+          <a href="../library/event-reports/national-integration-camp-2013.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card" data-category="events">
+          <div class="dl-card-badge social-badge">Social</div>
+          <div class="dl-card-icon">📝</div>
+          <div class="dl-card-body">
+            <h4>Blood Donation Camp Report</h4>
+            <p>Documentation of the NCC-organized blood donation drive conducted on campus.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 October 2024</span>
+              <span class="dl-size">PDF · 680 KB</span>
+            </div>
+          </div>
+          <a href="../library/event-reports/blood-donation-camp-2024.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="dl-card" data-category="events">
+          <div class="dl-card-badge event-badge">Camp</div>
+          <div class="dl-card-icon">📝</div>
+          <div class="dl-card-body">
+            <h4>Army Attachment Camp Report</h4>
+            <p>Report from Army Attachment Camp participation by senior NCC cadets.</p>
+            <div class="dl-meta">
+              <span class="dl-date">📅 August 2024</span>
+              <span class="dl-size">PDF · 1.4 MB</span>
+            </div>
+          </div>
+          <a href="../library/event-reports/army-attachment-camp-2024.pdf" class="dl-btn" download>
+            <span>Download</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="../people/index.html">People</a></li>
+        <li><a href="../gallery/index.html">Gallery</a></li>
+        <li><a href="../downloads/index.html">Downloads</a></li>
+        <li><a href="../achievers/index.html">Achievers</a></li>
+        <li><a href="../contact/index.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Library</h3>
+      <ul>
+        <li><a href="../library/notices/cadet-handbook.pdf" target="_blank">Cadet Handbook</a></li>
+        <li><a href="../library/notices/enrollment-form-2025-26.pdf" target="_blank">Enrollment Form 2025&ndash;26</a>
+        </li>
+        <li><a href="../library/annual-reports/annual-report-2024-25.pdf" target="_blank">Annual Report
+            2024&ndash;25</a></li>
+        <li><a href="../downloads/index.html">All Downloads &rarr;</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h3>Contact Us</h3>
+      <p>&#128205; Room 210, Academic Building I,<br>Tezpur University, Assam 784028</p>
+      <p>&#9993;&#65039; ncc@tezu.ernet.in</p>
+      <p>&#128222; +91 9401339443</p>
+      <div class="social-links">
+        <a href="#" title="Facebook">FB</a>
+        <a href="#" title="Instagram">IG</a>
+        <a href="#" title="YouTube">YT</a>
       </div>
     </div>
 
-    <!-- ── FILTER TABS ── -->
-    <div class="downloads-filters">
-      <div class="filter-inner">
-        <button class="filter-btn active" data-filter="all">All Resources</button>
-        <button class="filter-btn" data-filter="notices">Notices</button>
-        <button class="filter-btn" data-filter="annual">Annual Reports</button>
-        <button class="filter-btn" data-filter="events">Event Reports</button>
-      </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NCC Tezpur University. All rights reserved. | 5 Assam Bn, NCC NER Directorate, Shillong</p>
     </div>
+  </footer>
 
-    <!-- ── MAIN CONTENT ── -->
-    <main class="downloads-main">
+  <script src="../JS/script.js"></script>
+  <script src="../JS/downloads.js"></script>
+</body>
 
-      <!-- NOTICES -->
-      <section class="dl-section" id="notices-section" data-category="notices">
-        <div class="dl-section-header">
-          <div class="dl-section-icon notices-icon">📋</div>
-          <div>
-            <span class="section-tag">Official Communications</span>
-            <h2>Notices &amp; Circulars</h2>
-          </div>
-        </div>
-
-        <div class="dl-grid">
-          <div class="dl-card" data-category="notices">
-            <div class="dl-card-badge new">New</div>
-            <div class="dl-card-icon">📄</div>
-            <div class="dl-card-body">
-              <h4>Enrollment Form 2025–26</h4>
-              <p>Application form for new cadets joining NCC in the academic year 2025–26.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 March 2025</span>
-                <span class="dl-size">PDF · 240 KB</span>
-              </div>
-            </div>
-            <a href="../library/notices/enrollment-form-2025-26.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card" data-category="notices">
-            <div class="dl-card-icon">📄</div>
-            <div class="dl-card-body">
-              <h4>Cadet Handbook</h4>
-              <p>Complete handbook for NCC cadets covering rules, regulations, and code of conduct.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 January 2025</span>
-                <span class="dl-size">PDF · 1.2 MB</span>
-              </div>
-            </div>
-            <a href="../library/notices/cadet-handbook.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card" data-category="notices">
-            <div class="dl-card-icon">📄</div>
-            <div class="dl-card-body">
-              <h4>Training Schedule 2025</h4>
-              <p>Detailed training timetable for all cadets including theory and practical sessions.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 February 2025</span>
-                <span class="dl-size">PDF · 320 KB</span>
-              </div>
-            </div>
-            <a href="../library/notices/training-schedule-2025.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card" data-category="notices">
-            <div class="dl-card-icon">📄</div>
-            <div class="dl-card-body">
-              <h4>Camp Selection Notice</h4>
-              <p>Guidelines and selection criteria for cadets participating in NCC camps.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 November 2024</span>
-                <span class="dl-size">PDF · 180 KB</span>
-              </div>
-            </div>
-            <a href="../library/notices/camp-selection-notice.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ANNUAL REPORTS -->
-      <section class="dl-section" id="annual-section" data-category="annual">
-        <div class="dl-section-header">
-          <div class="dl-section-icon annual-icon">📊</div>
-          <div>
-            <span class="section-tag">Year in Review</span>
-            <h2>Annual Reports</h2>
-          </div>
-        </div>
-
-        <div class="dl-grid annual-grid">
-          <div class="dl-card annual-card" data-category="annual">
-            <div class="annual-year">2024–25</div>
-            <div class="dl-card-body">
-              <h4>Annual Activity Report</h4>
-              <p>Comprehensive overview of all NCC activities, achievements, and cadet performance during the academic year.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 April 2025</span>
-                <span class="dl-size">PDF · 4.8 MB</span>
-              </div>
-            </div>
-            <a href="../library/annual-reports/annual-report-2024-25.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card annual-card" data-category="annual">
-            <div class="annual-year">2023–24</div>
-            <div class="dl-card-body">
-              <h4>Annual Activity Report</h4>
-              <p>Complete record of NCC activities, camp participation, social service initiatives, and cadet accomplishments.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 April 2024</span>
-                <span class="dl-size">PDF · 4.2 MB</span>
-              </div>
-            </div>
-            <a href="../library/annual-reports/annual-report-2023-24.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card annual-card" data-category="annual">
-            <div class="annual-year">2022–23</div>
-            <div class="dl-card-body">
-              <h4>Annual Activity Report</h4>
-              <p>Documentation of unit activities including training outcomes, awards received, and NIC participation.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 May 2023</span>
-                <span class="dl-size">PDF · 3.6 MB</span>
-              </div>
-            </div>
-            <a href="../library/annual-reports/annual-report-2022-23.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card annual-card" data-category="annual">
-            <div class="annual-year">2021–22</div>
-            <div class="dl-card-body">
-              <h4>Annual Activity Report</h4>
-              <p>Year-end report covering all activities, camps attended, and notable achievements of cadets.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 April 2022</span>
-                <span class="dl-size">PDF · 3.1 MB</span>
-              </div>
-            </div>
-            <a href="../library/annual-reports/annual-report-2021-22.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- EVENT REPORTS -->
-      <section class="dl-section" id="events-section" data-category="events">
-        <div class="dl-section-header">
-          <div class="dl-section-icon events-icon">🎖️</div>
-          <div>
-            <span class="section-tag">Activities &amp; Camps</span>
-            <h2>Event Reports</h2>
-          </div>
-        </div>
-
-        <div class="dl-grid">
-          <div class="dl-card" data-category="events">
-            <div class="dl-card-badge event-badge">Camp</div>
-            <div class="dl-card-icon">📝</div>
-            <div class="dl-card-body">
-              <h4>CATC Camp Report — 2025</h4>
-              <p>Combined Annual Training Camp report including attendance, training modules, and performance evaluation.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 January 2025</span>
-                <span class="dl-size">PDF · 1.8 MB</span>
-              </div>
-            </div>
-            <a href="../library/event-reports/catc-camp-report-2025.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card" data-category="events">
-            <div class="dl-card-badge social-badge">Social</div>
-            <div class="dl-card-icon">📝</div>
-            <div class="dl-card-body">
-              <h4>Republic Day Parade Report 2025</h4>
-              <p>Report from NCC cadets' participation in Republic Day Parade preparations and events.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 February 2025</span>
-                <span class="dl-size">PDF · 950 KB</span>
-              </div>
-            </div>
-            <a href="../library/event-reports/republic-day-parade-2025.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card" data-category="events">
-            <div class="dl-card-badge event-badge">NIC</div>
-            <div class="dl-card-icon">📝</div>
-            <div class="dl-card-body">
-              <h4>National Integration Camp — 2014</h4>
-              <p>Report from the National Integration Camp hosted at Tezpur University in 2014.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 December 2014</span>
-                <span class="dl-size">PDF · 2.3 MB</span>
-              </div>
-            </div>
-            <a href="../library/event-reports/national-integration-camp-2014.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card" data-category="events">
-            <div class="dl-card-badge event-badge">NIC</div>
-            <div class="dl-card-icon">📝</div>
-            <div class="dl-card-body">
-              <h4>National Integration Camp — 2013</h4>
-              <p>Report from the first National Integration Camp hosted at Tezpur University in 2013.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 December 2013</span>
-                <span class="dl-size">PDF · 2.1 MB</span>
-              </div>
-            </div>
-            <a href="../library/event-reports/national-integration-camp-2013.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card" data-category="events">
-            <div class="dl-card-badge social-badge">Social</div>
-            <div class="dl-card-icon">📝</div>
-            <div class="dl-card-body">
-              <h4>Blood Donation Camp Report</h4>
-              <p>Documentation of the NCC-organized blood donation drive conducted on campus.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 October 2024</span>
-                <span class="dl-size">PDF · 680 KB</span>
-              </div>
-            </div>
-            <a href="../library/event-reports/blood-donation-camp-2024.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-
-          <div class="dl-card" data-category="events">
-            <div class="dl-card-badge event-badge">Camp</div>
-            <div class="dl-card-icon">📝</div>
-            <div class="dl-card-body">
-              <h4>Army Attachment Camp Report</h4>
-              <p>Report from Army Attachment Camp participation by senior NCC cadets.</p>
-              <div class="dl-meta">
-                <span class="dl-date">📅 August 2024</span>
-                <span class="dl-size">PDF · 1.4 MB</span>
-              </div>
-            </div>
-            <a href="../library/event-reports/army-attachment-camp-2024.pdf" class="dl-btn" download>
-              <span>Download</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- ── FOOTER ── -->
-        <footer>
-      <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="../people/index.html">People</a></li>
-          <li><a href="../gallery/index.html">Gallery</a></li>
-          <li><a href="../downloads/index.html">Downloads</a></li>
-          <li><a href="../achievers/index.html">Achievers</a></li>
-          <li><a href="../contact/index.html">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Library</h3>
-        <ul>
-          <li><a href="../library/notices/cadet-handbook.pdf" target="_blank">Cadet Handbook</a></li>
-          <li><a href="../library/notices/enrollment-form-2025-26.pdf" target="_blank">Enrollment Form 2025&ndash;26</a></li>
-          <li><a href="../library/annual-reports/annual-report-2024-25.pdf" target="_blank">Annual Report 2024&ndash;25</a></li>
-          <li><a href="../downloads/index.html">All Downloads &rarr;</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-contact">
-        <h3>Contact Us</h3>
-        <p>&#128205; Room 210, Academic Building I,<br>Tezpur University, Assam 784028</p>
-        <p>&#9993;&#65039; ncc@tezu.ernet.in</p>
-        <p>&#128222; +91 9401339443</p>
-        <div class="social-links">
-          <a href="#" title="Facebook">FB</a>
-          <a href="#" title="Instagram">IG</a>
-          <a href="#" title="YouTube">YT</a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 NCC Tezpur University. All rights reserved. | 5 Assam Bn, NCC NER Directorate, Shillong</p>
-      </div>
-    </footer>
-
-    <script src="../JS/script.js"></script>
-    <script src="../JS/downloads.js"></script>
-  </body>
 </html>
