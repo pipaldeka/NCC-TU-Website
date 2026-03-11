@@ -1,0 +1,177 @@
+/* Contact page inherits page-hero styles defined in people.css */
+.page-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, var(--navy-light) 100%);
+  padding: 70px 7%;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,107,26,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--saffron), var(--white), var(--green));
+}
+
+.page-hero-content { position: relative; z-index: 1; }
+.page-hero-content .section-tag { color: var(--saffron-light); display: block; margin-bottom: 10px; }
+
+.page-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.page-hero-content p { font-size: 1.05rem; color: rgba(255,255,255,0.65); }
+
+/* ── CONTACT SECTION ── */
+.contact-section {
+  padding: 70px 7%;
+  background: var(--white);
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+}
+
+.contact-info-panel {
+  background: var(--navy);
+  padding: 44px 36px;
+  color: rgba(255,255,255,0.85);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info-panel::before {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,107,26,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.contact-info-panel h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.info-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+  align-items: flex-start;
+}
+
+.info-icon {
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--saffron-light);
+  margin-bottom: 6px;
+}
+
+.info-item p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.72);
+}
+
+.info-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-map-panel {
+  overflow: hidden;
+  min-height: 460px;
+}
+
+.contact-map-panel iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* ══════════════════════════════════════
+   CONTACT — RESPONSIVE
+   ══════════════════════════════════════ */
+
+/* ── ≤900px ── */
+@media (max-width: 900px) {
+  .page-hero { padding: 56px 5%; }
+  .contact-wrapper { grid-template-columns: 1fr; }
+  .contact-map-panel { min-height: 360px; }
+}
+
+/* ── ≤768px ── */
+@media (max-width: 768px) {
+  .page-hero { padding: 48px 5%; }
+  .page-hero-content h1 { font-size: 2.2rem; }
+  .contact-section { padding: 40px 5%; }
+  .contact-info-panel { padding: 32px 24px; }
+  .contact-map-panel { min-height: 300px; }
+}
+
+/* ── ≤640px ── */
+@media (max-width: 640px) {
+  .page-hero { padding: 40px 5%; }
+  .page-hero-content h1 { font-size: 1.9rem; }
+  .contact-section { padding: 30px 4%; }
+  .contact-info-panel { padding: 28px 20px; }
+  .contact-info-panel h3 { font-size: 1.2rem; margin-bottom: 24px; }
+  .info-item { gap: 12px; margin-bottom: 22px; }
+  .info-item p { font-size: 0.85rem; }
+  .contact-map-panel { min-height: 260px; }
+}
+
+/* ── ≤480px ── */
+@media (max-width: 480px) {
+  .page-hero-content h1 { font-size: 1.65rem; }
+  .contact-wrapper { border-radius: 10px; }
+  .info-item strong { font-size: 0.72rem; }
+}

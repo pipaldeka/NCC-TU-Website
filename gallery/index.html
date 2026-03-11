@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery — NCC Tezpur University</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/gallery.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <a href="../index.html">
+        <div class="logo">
+          <img src="../res/logo.png" alt="NCC Logo" />
+          <div class="logo-text-container">
+            <h2>NCC</h2>
+            <h3>Tezpur University</h3>
+          </div>
+        </div>
+      </a>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="../people/index.html">People</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../gallery/index.html" class="nav-active">Gallery</a></li>
+          <li><a href="../index.html#faq-section">FAQ</a></li>
+          <li><a href="../downloads/index.html">Downloads</a></li>
+          <li><a href="../achievers/index.html">Achievers</a></li>
+          <li><a href="../contact/index.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      </nav>
+    </header>
+
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <span class="section-tag">Visual Record</span>
+        <h1>Gallery</h1>
+        <p>A collection of moments from our camps, parades, and events</p>
+      </div>
+    </div>
+
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <div class="gallery-item"><img src="../res/image1.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image2.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image3.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image4.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image5.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image6.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image7.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image8.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image9.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image10.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image11.jpg" alt="Gallery Image" /></div>
+        <div class="gallery-item"><img src="../res/image12.jpg" alt="Gallery Image" /></div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <button class="lightbox-nav lb-prev" id="lb-prev">&#10094;</button>
+      <img id="lightbox-img" src="" alt="" />
+      <button class="lightbox-nav lb-next" id="lb-next">&#10095;</button>
+      <div class="lightbox-counter" id="lb-counter"></div>
+    </div>
+
+        <footer>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../people/index.html">People</a></li>
+          <li><a href="../gallery/index.html">Gallery</a></li>
+          <li><a href="../downloads/index.html">Downloads</a></li>
+          <li><a href="../achievers/index.html">Achievers</a></li>
+          <li><a href="../contact/index.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Library</h3>
+        <ul>
+          <li><a href="../library/notices/cadet-handbook.pdf" target="_blank">Cadet Handbook</a></li>
+          <li><a href="../library/notices/enrollment-form-2025-26.pdf" target="_blank">Enrollment Form 2025&ndash;26</a></li>
+          <li><a href="../library/annual-reports/annual-report-2024-25.pdf" target="_blank">Annual Report 2024&ndash;25</a></li>
+          <li><a href="../downloads/index.html">All Downloads &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h3>Contact Us</h3>
+        <p>&#128205; Room 210, Academic Building I,<br>Tezpur University, Assam 784028</p>
+        <p>&#9993;&#65039; ncc@tezu.ernet.in</p>
+        <p>&#128222; +91 9401339443</p>
+        <div class="social-links">
+          <a href="#" title="Facebook">FB</a>
+          <a href="#" title="Instagram">IG</a>
+          <a href="#" title="YouTube">YT</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NCC Tezpur University. All rights reserved. | 5 Assam Bn, NCC NER Directorate, Shillong</p>
+      </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+    <script>
+      const images = document.querySelectorAll(".gallery-item img");
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const counter = document.getElementById("lb-counter");
+      let currentIndex = 0;
+      const imgSrcs = [...images].map(i => i.src);
+
+      function openLightbox(index) {
+        currentIndex = index;
+        lightboxImg.src = imgSrcs[currentIndex];
+        lightbox.style.display = "flex";
+        counter.textContent = `${currentIndex + 1} / ${imgSrcs.length}`;
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.style.display = "none";
+        document.body.style.overflow = "";
+      }
+
+      images.forEach((img, i) => {
+        img.addEventListener("click", () => openLightbox(i));
+      });
+
+      document.getElementById("lb-prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + imgSrcs.length) % imgSrcs.length;
+        lightboxImg.src = imgSrcs[currentIndex];
+        counter.textContent = `${currentIndex + 1} / ${imgSrcs.length}`;
+      });
+
+      document.getElementById("lb-next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % imgSrcs.length;
+        lightboxImg.src = imgSrcs[currentIndex];
+        counter.textContent = `${currentIndex + 1} / ${imgSrcs.length}`;
+      });
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (lightbox.style.display === "flex") {
+          if (e.key === "Escape") closeLightbox();
+          if (e.key === "ArrowLeft") document.getElementById("lb-prev").click();
+          if (e.key === "ArrowRight") document.getElementById("lb-next").click();
+        }
+      });
+    </script>
+  </body>
+</html>

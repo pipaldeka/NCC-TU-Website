@@ -1,0 +1,355 @@
+/* ════════════════════════════════════
+   ACHIEVERS PAGE — achievers.css
+   ════════════════════════════════════ */
+
+/* ── Hero ── */
+.achievers-hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--navy) 0%, #0f2040 60%, #1a0a05 100%);
+  padding: 90px 7% 70px;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--saffron), var(--white), var(--green)) 1;
+}
+
+.hero-medal-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18rem;
+  opacity: 0.04;
+  pointer-events: none;
+  line-height: 1;
+  user-select: none;
+}
+
+.achievers-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.achievers-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  color: white;
+  margin: 10px 0 16px;
+}
+
+.achievers-hero-content p {
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ── Main wrapper ── */
+.achievers-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 5% 80px;
+}
+
+/* ── Filter tabs ── */
+.achiever-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+
+.af-tab {
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1.5px solid var(--border-light);
+  background: white;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.af-tab:hover {
+  border-color: var(--saffron);
+  color: var(--saffron);
+}
+
+.af-tab.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+/* ── Section ── */
+.achiever-section {
+  margin-bottom: 64px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.achiever-section.hidden {
+  display: none;
+}
+
+.achiever-section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--cream);
+}
+
+.achiever-section-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.achiever-section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin: 0 0 6px;
+}
+
+.achiever-section-sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Grid ── */
+.achievers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.achievers-grid.three-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ── Achiever Card ── */
+.ac-card {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+}
+
+.ac-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: rgba(255,107,26,0.2);
+}
+
+.featured-ac {
+  flex-direction: row;
+  border-left: 4px solid var(--saffron);
+}
+
+/* Medal badge */
+.ac-medal {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 1.5rem;
+  z-index: 2;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+}
+
+/* Image section */
+.ac-img-wrap {
+  position: relative;
+  width: 160px;
+  flex-shrink: 0;
+  background: linear-gradient(160deg, var(--navy), #1a3a6e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 20px;
+}
+
+.ac-img-wrap img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.15);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.small-wrap {
+  width: 100%;
+  padding: 24px 20px 16px;
+  background: linear-gradient(160deg, var(--navy), #1a2a50);
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.small-wrap img {
+  width: 64px;
+  height: 64px;
+}
+
+/* Rank badge on image */
+.ac-rank-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.small-wrap .ac-rank-badge {
+  position: static;
+  transform: none;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.suo-badge  { background: rgba(255,107,26,0.9); color: white; }
+.juo-badge  { background: rgba(124,58,237,0.9); color: white; }
+.csm-badge  { background: rgba(180,83,9,0.9); color: white; }
+.sgt-badge  { background: rgba(4,106,56,0.9); color: white; }
+.cpl-badge  { background: rgba(2,132,199,0.9); color: white; }
+.lcpl-badge { background: rgba(75,85,99,0.85); color: white; }
+
+/* Body section */
+.ac-body {
+  padding: 24px 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ac-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin: 0;
+}
+
+.ac-rank-line {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Achievement tag pills */
+.ac-achievement-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  width: fit-content;
+}
+
+.nic-tag    { background: #fef3c7; color: #92400e; border-left: 3px solid #f59e0b; }
+.rdp-tag    { background: #fce7f3; color: #9d174d; border-left: 3px solid #ec4899; }
+.catc-tag   { background: #d1fae5; color: #065f46; border-left: 3px solid #10b981; }
+.social-tag { background: #dbeafe; color: #1e40af; border-left: 3px solid #3b82f6; }
+
+.ac-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Award chips */
+.ac-awards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.ac-award-chip {
+  padding: 4px 10px;
+  background: var(--cream);
+  border: 1px solid var(--border-light);
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* Compact cards for 3-col */
+.ac-compact .ac-body {
+  padding: 16px 18px 20px;
+}
+
+.ac-compact .ac-body h3 {
+  font-size: 1rem;
+}
+
+/* Back link */
+.achievers-back {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-light);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .achievers-grid.three-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievers-hero { padding: 64px 5% 52px; }
+  .hero-medal-bg  { font-size: 10rem; }
+
+  .achievers-grid,
+  .achievers-grid.three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-ac {
+    flex-direction: column;
+  }
+
+  .ac-img-wrap {
+    width: 100%;
+    padding: 28px 20px;
+  }
+
+  .achiever-filters { gap: 8px; }
+  .af-tab { font-size: 0.8rem; padding: 7px 14px; }
+
+  .achiever-section-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievers-main { padding: 40px 4% 60px; }
+  .ac-body { padding: 18px 16px; }
+  .achiever-section-header h2 { font-size: 1.3rem; }
+}
